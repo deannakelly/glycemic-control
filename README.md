@@ -165,7 +165,7 @@ The decision tree classifier's accuracy improved
 
 ### Feature Importances
 
-- Baseline A1C category, race, and GLP-1 RA medication type were recognized as the strongest predictors across all models. For example, each one-category increase in baseline A1C level was associated with 23% lower odds (OR=0.77) of achieving glycemic control. Being white was associated with 34% higher odds (OR=1.34), while taking liraglutide was associated with 35% lower odds (OR=0.65) according to the logistic regression model.
+- Baseline A1C category, race, and GLP-1 medication type were the strongest predictors across all models. For example, according to the logistic regression model, each one-category increase in baseline A1C reduced odds of success by 23% (OR=0.77), White racial identification was associated with 34% higher odds (OR=1.34), and liraglutide showed 35% lower odds (OR=0.65) compared to tirzepatide (OR=1.07). These findings validate the patterns observed in exploratory analysis.
 
 ![Logistic Regression - Feature Importances](visuals/importances-lr.png)
 
@@ -227,9 +227,7 @@ and medication
 
 - **Limited Features**: Other characteristics, like BMI and disease duration, are also predictive of glycemic control according to research literature but they were not available for use in the dataset. 
 
-- **Modest Model Performance**: The classification models performed only modestly. The most predictive models had generally poor precision and recall scores. Future work could explore different approaches to improving these metrics, and specifically precision, like threshold tuning. It could also be the case that the features available do not capture enough variance to predict outcomes well.
-
-# Notes & References
+- **Modest Model Performance**: The classification models performed only modestly. The most predictive models had generally poor precision and recall scores. Future work could explore different approaches to improving these metrics (especially precision) like threshold tuning. It could also be the case that the features available do not capture enough variance to predict outcomes well.
 
 [^1]: American Diabetes Association Professional Practice Committee; 6. Glycemic Goals and Hypoglycemia: Standards of Care in Diabetes—2025. Diabetes Care 1 January 2025; 48 (Supplement_1): S128–S145. https://doi.org/10.2337/dc25-S006
 
